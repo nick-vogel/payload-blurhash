@@ -1,4 +1,4 @@
-import { PayloadRequest } from 'payload'
+import type { PayloadRequest } from 'payload'
 
 export async function getImageBuffer(
   url: string,

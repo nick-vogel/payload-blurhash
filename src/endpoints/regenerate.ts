@@ -1,6 +1,7 @@
-import { PayloadHandler } from 'payload'
-import { getImageBuffer } from '../utils/getImageBuffer.js'
+import type { PayloadHandler } from 'payload'
+
 import { encodeBlurhash } from '../utils/encodeBlurhash.js'
+import { getImageBuffer } from '../utils/getImageBuffer.js'
 
 export const regenerateHandler: PayloadHandler =
   async (req) => {

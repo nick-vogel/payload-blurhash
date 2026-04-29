@@ -6,8 +6,8 @@ import {
   DEFAULT_COMPONENT_X,
   DEFAULT_COMPONENT_Y,
 } from '../defaults.js'
-import { getImageBuffer } from '../utils/getImageBuffer.js'
 import { encodeBlurhash } from '../utils/encodeBlurhash.js'
+import { getImageBuffer } from '../utils/getImageBuffer.js'
 
 export const generateBlurhash = (
   options: BlurhashPluginOptions,

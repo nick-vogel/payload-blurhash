@@ -16,10 +16,10 @@ let payload: Payload
 const makeImage = async (): Promise<Buffer> =>
   sharp({
     create: {
-      width: 64,
-      height: 48,
+      background: { b: 50, g: 100, r: 200 },
       channels: 3,
-      background: { r: 200, g: 100, b: 50 },
+      height: 48,
+      width: 64,
     },
   })
     .png()
@@ -64,9 +64,9 @@ describe('blurhashPlugin', () => {
       collection: 'media',
       data: {},
       file: {
+        name: 'test.png',
         data: buffer,
         mimetype: 'image/png',
-        name: 'test.png',
         size: buffer.length,
       },
     })
@@ -85,9 +85,9 @@ describe('blurhashPlugin', () => {
       collection: 'media',
       data: { blurhashComponentX: 2, blurhashComponentY: 2 },
       file: {
+        name: 'small.png',
         data: buffer,
         mimetype: 'image/png',
-        name: 'small.png',
         size: buffer.length,
       },
     })
@@ -95,9 +95,9 @@ describe('blurhashPlugin', () => {
       collection: 'media',
       data: { blurhashComponentX: 9, blurhashComponentY: 9 },
       file: {
+        name: 'large.png',
         data: buffer,
         mimetype: 'image/png',
-        name: 'large.png',
         size: buffer.length,
       },
     })

@@ -6,10 +6,10 @@ import { encodeBlurhash } from '../src/utils/encodeBlurhash.js'
 const makeImage = async (): Promise<Buffer> =>
   sharp({
     create: {
-      width: 32,
-      height: 24,
+      background: { b: 100, g: 200, r: 10 },
       channels: 3,
-      background: { r: 10, g: 200, b: 100 },
+      height: 24,
+      width: 32,
     },
   })
     .png()

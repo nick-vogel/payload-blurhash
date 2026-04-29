@@ -56,7 +56,22 @@ blurhashPlugin({
 
 ### Rendering the placeholder
 
-Because the value is already a data URL, you can render it directly:
+The value is already a base64 WebP data URL, so it drops straight into `next/image` as `blurDataURL`:
+
+```tsx
+import Image from 'next/image'
+
+<Image
+  src={media.url}
+  width={media.width}
+  height={media.height}
+  alt={media.alt ?? ''}
+  placeholder="blur"
+  blurDataURL={media.blurhash}
+/>
+```
+
+Or use it as a plain `<img>` for a static blur:
 
 ```tsx
 <img
@@ -64,8 +79,6 @@ Because the value is already a data URL, you can render it directly:
   style={{ aspectRatio: `${media.width} / ${media.height}` }}
 />
 ```
-
-For a polished cross-fade, swap to the full image once it loads.
 
 ## Regenerate endpoint
 
