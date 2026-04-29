@@ -1,9 +1,9 @@
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { blurhashPlugin } from '@nlvogel/payload-blurhash'
 import { MongoMemoryReplSet } from 'mongodb-memory-server'
 import path from 'path'
 import { buildConfig } from 'payload'
-import { blurhashPlugin } from '@nick-vogel/payload-blurhash'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
 
