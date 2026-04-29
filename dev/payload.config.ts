@@ -3,7 +3,7 @@ import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { MongoMemoryReplSet } from 'mongodb-memory-server'
 import path from 'path'
 import { buildConfig } from 'payload'
-import { blurhashPlugin } from 'payload-blurhash'
+import { blurhashPlugin } from '@nick-vogel/payload-blurhash'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
 

@@ -77,7 +77,7 @@ export const blurhashPlugin =
           admin: {
             components: {
               Field: {
-                path: 'payload-blurhash/client#BlurhashPreview',
+                path: '@nick-vogel/payload-blurhash/client#BlurhashPreview',
               },
             },
             position: 'sidebar',

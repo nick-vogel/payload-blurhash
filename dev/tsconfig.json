@@ -19,10 +19,10 @@
       "@payload-config": [
         "./payload.config.ts"
       ],
-      "payload-blurhash": [
+      "@nick-vogel/payload-blurhash": [
         "../src/index.ts"
       ],
-      "payload-blurhash/client": [
+      "@nick-vogel/payload-blurhash/client": [
         "../src/exports/client.ts"
       ],
     },

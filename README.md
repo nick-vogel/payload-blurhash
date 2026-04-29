@@ -7,9 +7,9 @@ The placeholder is stored as a `data:image/webp;base64,...` string directly on t
 ## Install
 
 ```bash
-pnpm add payload-blurhash
+pnpm add @nick-vogel/payload-blurhash
 # or
-npm install payload-blurhash
+npm install @nick-vogel/payload-blurhash
 ```
 
 `sharp` is a peer dependency. If you're already running Payload, you have it.
@@ -19,7 +19,7 @@ npm install payload-blurhash
 ```ts
 // payload.config.ts
 import { buildConfig } from 'payload'
-import { blurhashPlugin } from 'payload-blurhash'
+import { blurhashPlugin } from '@nick-vogel/payload-blurhash'
 
 export default buildConfig({
   plugins: [
