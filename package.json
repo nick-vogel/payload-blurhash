@@ -1,6 +1,6 @@
 {
   "name": "payload-blurhash",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Payload CMS plugin for automatic blurhash generation on image uploads.",
   "keywords": [
     "payload",
