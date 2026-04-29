@@ -1,6 +1,6 @@
+import { blurhashPlugin } from '@nlvogel/payload-blurhash'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import { blurhashPlugin } from '@nlvogel/payload-blurhash'
 import { MongoMemoryReplSet } from 'mongodb-memory-server'
 import path from 'path'
 import { buildConfig } from 'payload'
